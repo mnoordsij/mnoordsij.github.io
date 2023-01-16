@@ -120,112 +120,147 @@ input.search:focus {
 
 body{
   background-color: #E4E0D9;
+  min-width: 400px;
 }
 
-form[name="place_item"]{
-  height: 55%;
-  width: 70%;
-  background-color: #505870;
-  top: 50%;
-  bottom: 20%;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255,255,255,0.1);
-  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+.cart{
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
-  margin-bottom: 70px;
-  margin-left: 70px;
-  padding: 30px 35px 30px;
-  display: inline-block;
-  color: #ffffff;
-  letter-spacing: 0.5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 2;
+  min-width:100px;
 }
 
-h2{
-  text-align: center;
-  font-size: 32px;
-  padding: 15px;
+.cart_self {
+  flex: 50%;
+  border-radius: 10px; 
+  padding: 2em;
+  font-size: 20px;
 }
 
-
-label{
-  padding-bottom: 10px;
-  padding-top: 10px;
-  font-size: 16px;
-  width: 90%;
-  display: inline-block;
-  text-align: left
-  
-}
-
-.placement input, textarea {
-  padding: 10px;
-  margin: 10px;
-  font-size: 14px;
-  border: 1px solid #E4E0D9;
+.overview {
+  flex: 30%;
+  background-color: #505870;
   border-radius: 10px;
-  text-align: left;
-  vertical-align: baseline;
-  justify-content: center;
-  
+  padding: 2em; 
+  color: white;
+  height: 10%;
 }
 
-input::file-selector-button {
-  font-weight: bold;
-  padding: 10px;
-  border: thin solid grey;
-  border-radius: 10px;
-  opacity: 0.8;
-}
 
-input[type="file"]::file-selector-button:hover,
-.button:hover{
-  opacity: 2;
-}
-.button {
+
+.btn {
+  margin-top:  1em;
+  margin-bottom: 1em;
   background-color:  #1C86A2;
   border: none;
   color: white;
   padding: 20px 45px;
   font-size: 20px;
-  margin: 15px 20px;
+  margin: 0 px 15px 20px;
   opacity: 0.8;
   transition: 0.3s;
   display:inline-block;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 10px;
-  
-}
-
-
-.placement  {
-  justify-content: center;
-  width: 100%;
-  text-align: center;
-  clear: both;
-  
-}
-
-.placement input{
-    width: 90%;
-    clear: both;
-    
-    
-}
- 
-
-textarea {
-  resize: none;
-  width: 90%;
-  height: 150px;
+  border-radius: 10px; 
   text-align: left;
-  vertical-align:bottom;
-  word-wrap: break-word;
 
+}
+.apply{
+  font-size: 18px;
+  background-color: #74BF87;
+  border: none;
+  color: white;
+  opacity: 0.8;
+  transition: 0.3s;
+  display:inline-block;
+  border-radius: 10px; 
+  padding: 10px;
+  margin-top: 1em;
+  width: 20%;
+}
+
+.apply:hover,
+.btn:hover{
+  opacity: 2;
+}
+
+.overview input, select {
+  margin-top:  1em;
+  margin-bottom: 1em;
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: left;
+  border: none;
+  width: 70%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+}
+.overview input, select {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.overview h2{
+  text-align: center;
+  padding: 10px;
+}
+
+.items_form{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.items input {
+  font-size: 14px;
+  border-radius: 10px;
+  text-align: left;
+  border: none;
+  width: 30px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.cart h1 {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+table {
+  width: 100%; 
+  text-align: center;
+  border-collapse: collapse;
+  border-right: 0;
+  border-left: 0;
+  font-size: 20px;
+}
+table td, table th {
+  border: 2px solid #1B2321; ;
+  border-right: 0;
+  border-left: 0;
+  padding: 10px;
+}
+table tr:first-child th {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
 }
 
 
+table input::placeholder {
+  text-align: center; 
+}
 
-
-  
+img {
+  align-content: center;
+    width:120px;
+    height:120px;
+    background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0;
+}

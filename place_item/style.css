@@ -21,6 +21,7 @@
   border: #E4E0D9;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 
 nav a{
@@ -100,6 +101,12 @@ input.search:focus {
   transform: translate(-50%, -50%);
 }
 
+body{
+  background-color: #E4E0D9;
+}
+
+
+
 @media screen and (max-width: 1000px) {
   .nav_bar  {
     flex-direction: column;
@@ -117,12 +124,7 @@ input.search:focus {
     width: 85%;
   }
 }
-
-body{
-  background-color: #E4E0D9;
-}
-
-form[name="place_item"]{
+form{
   height: 55%;
   width: 70%;
   background-color: #505870;

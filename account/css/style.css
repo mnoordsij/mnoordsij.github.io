@@ -11,14 +11,16 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-evenly;
   padding:  40px 0%;
   min-width:400px;
 }
 .active {
-  padding-left: 5%;
-  padding-right: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: #E4E0D9;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 nav a{
@@ -29,9 +31,11 @@ li{
   display: inline-block;
   align-items: center;
   justify-content: center;
-  padding-left: 20px;
-  padding-right: 30px;
-  
+  padding: 0px 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 li .account a{
@@ -43,14 +47,13 @@ li .sc a{
 }
 li .account a, li .sc  a{
   flex-shrink: 0;
+  flex-grow: 20;
+  width: 100%;
   border-radius: 10px; 
   height: 50px;
-  width: 70%;
+  padding: 0px 20px;
   display: inline-block;
   text-align: center;
-  padding: 0px 10px;
-  padding-top: 10px;
-  margin: 10px;
 }
 
 .searching {
@@ -62,7 +65,8 @@ li .account a, li .sc  a{
 }
 
 .search {
-  max-width: 20em;
+  width: 35em;
+  min-width: 20px;
   height: 2em;
   border: 5px solid #505870;
   border-right: none;
@@ -90,11 +94,28 @@ input.search:focus {
 
 
 .wrap{
-  width: 10%;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1000px) {
+  .nav_bar  {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .active, .nav_bar a, li {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    margin: 10px;
+    padding: 0;
+  }
+  li .account a, li .sc a {
+    width: 85%;
+  }
 }
 
 body{
@@ -119,7 +140,7 @@ h1{
 
 }
 
-input[type=text], input[type=email], input[type=password]{
+p input[type=text],  input[type=email],  input[type=password]{
     width: 80%;
     padding: 12px 20px;
   }
