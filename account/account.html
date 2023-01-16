@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Account</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+<body>
+    
+    
+  
+    <nav class ="nav_bar">
+            
+        <a class="active" href="../home/home.html"><h1>WEBSHOP</h1></a>
+        
+        <ul class="top_navigation"></ul>    
+            <li>
+                <form action="../products/products.html"> 
+                    <div class="searching">
+                        
+                        <input type="text" class="search" placeholder="Search...">
+                        
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </li>
+            
+            <li>
+                <div class="account"><a href="../account/account.html">
+                    <i class="fa fa-user"  style="font-size:36px"></i></a></div>
+            </li>
+
+            <li>
+                <div class="sc"><a href="../cart/cart.html"><i class="fa fa-shopping-cart" style="font-size:36px"></i>
+                <h2></h2></a></div>
+            </li>
+        </ul>
+    </nav>
+
+<h1>My account</h1>
+           
+<form action="account.html">
+    <table>
+        <tr>
+            <td>
+    <p>         
+    <label for="name">Name:<br></label>
+    <input type="text" id="name"  name="name"><br><br>
+
+    <label for="id">User ID:<br></label>
+    <input type="text" id="id"  name="id"><br><br>
+
+    <label for="email">Email address:<br></label>
+    <input type="email" id="email"  name="email"><br><br>
+
+    <label for="pass">Password:<br></label>
+    <input type="password" id="pass"  name="pass"><br><br>
+    
+    <label for="date-birth">Date of birth:</label>
+    <input type="date" id="date-birth"  name="date-birth">
+    
+    <input type="radio" id="female" name="sex">
+    <label for="female">Female</label>
+    <input type="radio" id="male" name="sex">
+    <label for="male">Male</label>
+    <input type="radio" id="other" name="sex">
+    <label for="other">Other</label>
+    <br><br>
+
+    Address:<br>
+    <label for="street+nr">Street and housenumber:<br></label>
+    <input type="text" id="street+nr"  name="street+nr"><br><br>
+    <label for="zip+city">ZIP code and city:<br></label>
+    <input type="text" id="zip+city"  name="zip+city"><br><br>
+    <label for="country">Country:<br></label>
+    <input type="text" id="country"  name="country"><br><br>
+    <label for="language">Language(s):<br></label>
+    <input type="text" id="language" name="language">
+    </p>   
+
+
+    </td><td>
+    <p>
+    
+    <a href="../login/login.html" class="button">Sign out</a><br><br>
+    <a href="../place_item/place_item.html" class="button">Place a new item</a><br><br>
+    <a href="../cart/cart.html" class="button">Shopping cart</a><br><br>
+    <a href="../account/account.html" class="button">View past orders</a><br><br>
+    
+    <label for="bio">About me:<br></label>
+    <textarea type="text" id="bio"  name="bio"></textarea>
+    </td>
+    </tr></table></p>
+    <p><button class="button" type="submit" >Update details</button></p>
+  </form> 
+
+  
+</body>
+</html>

@@ -1,0 +1,180 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.nav_bar{
+  background-color:hsl(165, 13%, 12%);
+  box-shadow: 0 0 25px 0 black; 
+  left: 0;  
+  right: 0; 
+  width: 100%; 
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:space-between;
+  padding:  40px 0%;
+  min-width:400px;
+}
+.active {
+  padding-left: 5%;
+  padding-right: 5px;
+  border: #E4E0D9;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+}
+li{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 30px;
+  
+}
+
+li .account a{
+  background-color:  #1C86A2;
+}
+
+li .sc a{
+  background-color:  #74BF87;
+}
+li .account a, li .sc  a{
+  flex-shrink: 0;
+  border-radius: 10px; 
+  height: 50px;
+  width: 70%;
+  display: inline-block;
+  text-align: center;
+  padding: 0px 10px;
+  padding-top: 10px;
+  margin: 10px;
+}
+
+.searching {
+  display: flex;
+  margin: 0 1rem;  
+  flex-shrink: 2;
+  flex-grow: 1;
+  flex-flow:nowrap;
+}
+
+.search {
+  max-width: 20em;
+  height: 2em;
+  border: 5px solid #505870;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  font-size: 18px;
+  text-align: left;
+  padding: 10px;
+}
+
+input.search:focus {
+  outline-width: 0;
+}
+.searchButton {
+  position: relative;
+  width: 10%;
+  border: 5px solid #505870;
+  background: #505870;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  font: 10em;
+}
+
+
+.wrap{
+  width: 10%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body{
+  background-color: #E4E0D9;
+}
+
+
+p{
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    
+}
+  
+
+h1{
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+
+}
+
+input[type=text], input[type=email], input[type=password]{
+    width: 80%;
+    padding: 12px 20px;
+  }
+ 
+  
+  textarea {
+    height: 500px;
+    width: 80%;
+    resize: none;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+
+  td {
+    width: 75%;
+    vertical-align: top;
+  }
+
+  .button{
+    background-color:  #1C86A2;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.8;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    
+  }
+  
+  .button:hover{opacity:2}
+
+  .center {
+    float: center;
+    text-align: center;
+   }
+
+
+
+   .left {
+    float: left;
+    text-align: left;
+   }
+
+   .logo {
+    position:absolute;
+    left:20px;
+    top:20px;
+ }
