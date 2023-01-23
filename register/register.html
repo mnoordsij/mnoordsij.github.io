@@ -3,14 +3,11 @@
     <head>
         <title>Become a member</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     </head>
 
 <body>
     
-    
-  
     <nav class ="nav_bar">
             
         <a class="active" href="../home_page/home.html"><h1>WEBSHOP</h1></a>
@@ -43,8 +40,8 @@
     <h1 class="center">Become a member</h1><br>
 
             
-           
-<form action="../login/login.html">
+<!-- when the form is submitted the page will not reload and will show the data tracked in the .js file-->>
+<form name="registration" onsubmit="show_tracked_data(); return false">
     <table>
         <tr>
             <td>
@@ -74,13 +71,13 @@
 
     Address:<br>
     <label for="street+nr">Street and housenumber:<br></label>
-    <input class="register" type="text" id="street+nr" required name="street+nr"><br><br>
+    <input class="register" type="text" id="street+nr" name="street+nr"><br><br>
     <label for="zip+city">ZIP code and city:<br></label>
     <input class="register" type="text" id="zip+city" required name="zip+city"><br><br>
     <label for="country">Country:<br></label>
     <input class="register" type="text" id="country" required name="country"><br><br>
     <label for="language">Language(s):<br></label>
-    <input class="register" type="text" id="language" name="language">
+    <input class="register" type="text" id="language" required name="language">
     </p>   
 
 
@@ -90,11 +87,15 @@
     <a href="../login/login.html" class="button">Sign in</a><br><br>
     
     <label for="bio">About me:<br></label>
-    <textarea type="text" id="bio" required name="bio"></textarea>
+    <textarea type="text" id="bio" name="bio"></textarea>
     </td>
     </tr></table></p>
-    <p><button class="button" type="submit" >Register</button></p>
+    <p><button class="button" id="register-button" type="submit" >Register</button></p>
   </form> 
+
+  <!--the div will be hidden until the form is submitted and will show the data tracked in the .js file-->
+  <div id="tracked_data" style="visibility: hidden;">You succesfully registered for this website<br><br></div>
+  <script src = "behavioral_tracking.js"></script>
 
   
 </body>
