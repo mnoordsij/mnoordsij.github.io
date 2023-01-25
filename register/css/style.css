@@ -11,14 +11,17 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-evenly;
   padding:  40px 0%;
   min-width:400px;
 }
 .active {
-  padding-left: 5%;
-  padding-right: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: #E4E0D9;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 
 nav a{
@@ -29,9 +32,11 @@ li{
   display: inline-block;
   align-items: center;
   justify-content: center;
-  padding-left: 20px;
-  padding-right: 30px;
-  
+  padding: 0px 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 li .account a{
@@ -43,14 +48,13 @@ li .sc a{
 }
 li .account a, li .sc  a{
   flex-shrink: 0;
+  flex-grow: 20;
+  width: 100%;
   border-radius: 10px; 
   height: 50px;
-  width: 70%;
+  padding: 0px 20px;
   display: inline-block;
   text-align: center;
-  padding: 0px 10px;
-  padding-top: 10px;
-  margin: 10px;
 }
 
 .searching {
@@ -62,7 +66,8 @@ li .account a, li .sc  a{
 }
 
 .search {
-  max-width: 20em;
+  width: 35em;
+  min-width: 20px;
   height: 2em;
   border: 5px solid #505870;
   border-right: none;
@@ -90,7 +95,6 @@ input.search:focus {
 
 
 .wrap{
-  width: 10%;
   position: relative;
   top: 50%;
   left: 50%;
@@ -103,20 +107,55 @@ body{
 
 
 
+@media screen and (max-width: 1000px) {
+  .nav_bar  {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .active, .nav_bar a, li {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    margin: 10px;
+    padding: 0;
+  }
+  li .account a, li .sc a {
+    width: 85%;
+  }
+}
+form{
+  margin: 2% 3%;
+}
+
 
 
 input[class=register]{
     width: 80%;
     padding: 12px 20px;
-    margin: 8px 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
     box-sizing: border-box;
+    border-radius: 10px;
+    border: solid;
+    border-width: 0px;
   }
  
-  
+ .form-label{
+  margin: 20px 0px;
+  padding: 10px 0px;
+ }
   textarea {
+    padding: 12px 20px;
+    margin: 8px 0px;
     height: 500px;
     width: 80%;
     resize: none;
+    color: #505870;
+    border-radius: 10px;
+    border: solid;
+    border-width: 0px;
+    color: #505870;
   }
 
   table {
@@ -124,7 +163,35 @@ input[class=register]{
     border-collapse: collapse;
     
   }
+  input[id="date-birth"]{
+    border-radius: 10px;
+    padding: 12px 60px;
+    border: solid;
+    border-width: 0px;
+    color: #505870;
 
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+.gender{
+  margin: 20px 0px;
+  display : inline-flex;
+  width : 75%;
+  justify-content: space-between;
+  
+  
+}
+input[type='radio'] {
+  
+  height: 20px;
+  width: 20px;
+  margin: 0px;
+}
+.sex-label{
+  display: block;
+  padding: 0px 5px 0px 5px;
+}
   td {
     width: 75%;
     vertical-align: top;
@@ -165,4 +232,24 @@ input[class=register]{
     position:absolute;
     left:20px;
     top:20px;
+ }
+ .center{
+  padding-top: 5%;
+ }
+
+ .under-input{
+  margin-top: 0px;
+  margin-bottom: 20px;
+ }
+
+ .pass{
+  margin: 10px 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: #505870;
+ }
+ .showPass{
+  margin: 10px 0px;
+ 
  }
