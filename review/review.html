@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place a review</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <nav class ="nav_bar">
+            
+        <a class="active" href="../home_page/home.html"><h1>WEBSHOP</h1></a>
+        
+        <ul class="top_navigation"></ul>    
+            <li>
+                <div class="searching">
+                    
+                    <input type="text" class="search" placeholder="Search...">
+                    
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </li>
+            
+            <li>
+                <div class="account"><a href="../account/account.html">
+                    <i class="fa fa-user"  style="font-size:36px"></i></a></div>
+            </li>
+
+            <li>
+                <div class="sc"><a href="../shopping_cart/Shopping_cart.html"><i class="fa fa-shopping-cart" style="font-size:36px"></i></a></div>
+            </li>
+        </ul>
+    </nav>
+
+
+    <form action="../item/item.html">
+        <p><h2> <b> Place a review</b></h2></p>
+        <hr>
+        <div class="placement">
+            
+            <p> <label for="">Rating</label>
+                <input type="number" id="rate" name="rate" min="0" max="5" placeholder="0" style="width:10%">  
+                <img src="star.png" alt="star" style="height: 20px;"></img></p>
+            
+            
+            <label for="">Feedback</label>
+            <textarea rows="10" cols="30" maxlength="400" name="comment" placeholder="Description..."></textarea></p>
+            
+           
+            </p>
+                <label for="Upload">Upload pictures</label>
+                <input type="file" id="myFile" name="filename" multiple >
+            </p>
+            
+            <button class="button">Place review</button>
+            
+    </div>
+    </form>
+
+    
+
+
+</body>
+
+</html>
